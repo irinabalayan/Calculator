@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (buttonText == '=') {
                 let expression = display.value;
-                let csrfToken = getCookie('csrftoken');  // Obtain CSRF token
+                let csrfToken = getCookie('csrftoken'); 
                 let form = document.getElementById('calculator-form');
 
                 fetch('/calc/', {
